@@ -1,1 +1,11 @@
-<h1> how is the weather in your neck of the woods? </h1>
+
+<div class="booyah-box col-10 offset-1">
+  <h1> how is the weather in your neck of the woods? </h1>
+  <%= simple_form_for @city do |f| %>
+    <%= f.input :city %>
+    <%= f.input :temperature %>
+    <%= f.input :conditions %>
+    <br />
+    <%= f.submit 'submit', class: 'btn btn-primary' %>
+  <% end %>
+</div>
